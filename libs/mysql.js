@@ -82,7 +82,7 @@ createTable(categorys)
 
 // 注册用户
 exports.insertUser = (value) => {
-    let _sql = "insert into users set user_name=?,user_pass=?;"
+    let _sql = "insert into users set user_id=?,user_name=?,user_pass=?,user_face=?,user_bio=?,user_create_time=?,user_update_time=?;"
     return query(_sql, value)
 }
 // 删除用户
